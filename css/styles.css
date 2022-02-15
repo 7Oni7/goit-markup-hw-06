@@ -581,6 +581,48 @@ img {
 .footer-socials-icon {
     fill: var(--title-text-color);
 }
+
+.footer-conteiner-box + .footer-conteiner-mailing {
+    margin-left: 93px;
+}
+
+.footer-field {
+    display: flex;
+}
+.footer-imput {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2f303a;
+
+    padding-left: 16px;
+}
+.footet-imput-wrap + .footet-imput-wrap {
+    margin-left: 12px;
+}
+.footer-btm-imput {
+    width: 200px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+
+    border-radius: 4px;
+    background-color: var(--accent-text-color);
+    border-color: transparent;
+}
+.footer-btm-icon {
+    margin-left: 10px;
+}
 /* ----------BACKDROP---------- */
 .backdrop {
     width: 100vw;
@@ -615,6 +657,10 @@ img {
     position: absolute;
     top: 10px;
     right: 10px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btm:hover,
 .modal-close-btm:focus {
@@ -647,6 +693,10 @@ img {
     box-sizing: border-box;
     border-radius: 4px;
     padding-left: 30px;
+
+    transition-property: border-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-iput:hover,
 .modal-iput:focus {
@@ -661,6 +711,10 @@ img {
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
+
+    transition-property: border-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-label {
     font-size: 12px;
@@ -742,6 +796,10 @@ img {
     background: #2196f3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-btn:hover,
